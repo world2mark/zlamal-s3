@@ -1,0 +1,15 @@
+{
+  "name": "zlamal-s3",
+  "version": "0.0.1",
+  "main": ".",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1",
+    "s3rver": "^3.7.1"
+  },
+  "engines": {
+    "node": "20"
+  }
+}
