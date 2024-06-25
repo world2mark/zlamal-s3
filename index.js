@@ -44,7 +44,11 @@ async function RunServer() {
     const { fromEvent } = require('rxjs');
     const s3Events = fromEvent(S3Instance, 'event');
 
-    s3Events.subscribe((event) => console.log(event));
+    s3Events.subscribe(event => {
+        for(const record of event.Records) {
+            console.log(record);
+        };
+    });
 
     console.log(runResult);
 };
